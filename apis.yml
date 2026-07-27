@@ -1,19 +1,45 @@
 aid: hang-ten
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/hang-ten.png
 name: Hang Ten
-description: Hang Ten is a company surfaced as a portfolio company of mayfield and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Hang Ten Systems is an enterprise AI services company founded in 2026 and
+  headquartered in Palo Alto, California. Led by co-founder and CEO Dr. Vishal Sikka
+  (formerly CEO of Infosys and a member of SAP's executive board), the company helps
+  large enterprises adopt AI to build, change, and run the software that runs their
+  business at a fraction of the cost and time. Its AI-native delivery model combines
+  agentic code generation, a reusable skills library, and deep domain expertise across
+  SAP migrations, finance, HR, and new product development. Hang Ten raised a $32 million
+  seed round led by Mayfield with strategic investment from Aramco Ventures, and counts
+  Siemens Gamesa Renewable Energy and Fresenius among its early customers.
 url: https://raw.githubusercontent.com/api-evangelist/hang-ten/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - mayfield
+- aramco-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Artificial Intelligence
+- Enterprise Software
+- AI Services
+- Consulting
+- Agentic AI
+- SAP
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +47,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/hang-ten-domain-security.yml
+- type: WellKnown
+  url: well-known/hang-ten-well-known.yml
 - type: Website
   url: https://hangten.ai
+- type: Blog
+  url: https://hangten.ai/blog
+- type: Press
+  url: https://hangten.ai/press
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
